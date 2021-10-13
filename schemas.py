@@ -11,7 +11,7 @@ class HeartAttackSchemaOutput(SQLAlchemySchema):
     name = auto_field()
 
 class HeartAttackSchema(SQLAlchemySchema):
-    class Meta:`
+    class Meta:
         model = HeartAttack
         load_instance = True
 
