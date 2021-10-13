@@ -8,10 +8,10 @@ class HeartAttackSchemaOutput(SQLAlchemySchema):
 
     uuid = auto_field()
     result = auto_field()
-
+    name = auto_field()
 
 class HeartAttackSchema(SQLAlchemySchema):
-    class Meta:
+    class Meta:`
         model = HeartAttack
         load_instance = True
 
