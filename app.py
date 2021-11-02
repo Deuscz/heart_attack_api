@@ -13,7 +13,6 @@ heart_attacks_schema_output = HeartAttackSchemaOutput(many=True)
 class HeartAttacksApi(Resource):
     def post(self):
         json_data = request.json
-        print(json_data)
         try:
             heart_attack = heart_attack_schema.load(data=json_data, session=db.session, partial=True)
         except ValidationError as e:
